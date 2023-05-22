@@ -2,6 +2,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   --accent-color: #661ad8;
+  --accent-color2: rgb(76, 31, 128);
 }
 
 body {
@@ -256,7 +257,7 @@ main {
   width: 90%;
   margin-inline: auto;
   transform: skew(-15deg);
-  background-color: #161616;
+  background-color: var(--accent-color);
 }
 
 .active h1 {
@@ -310,8 +311,12 @@ main {
   color: white;
 }
 
-.social_links h1 {
-  background-color: #161616;
+.social_links svg {
+  margin-right: 5px;
+}
+
+.social_links .header {
+  background-color: var(--accent-color);
   padding: 10px;
   transform: skew(-10deg);
 }
@@ -411,6 +416,37 @@ main {
 
 .job__title h2 {
   color: white;
+}
+
+.current__job {
+  color: white;
+  margin-inline: auto;
+  margin-block: 2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.current__job .title {
+  margin: 0;
+  width: 90%;
+  margin-inline: auto;
+  color: white;
+  background-color: var(--accent-color);
+  transform: skew(-10deg);
+}
+
+.current .job__header {
+  color: var(--accent-color);
+}
+
+.past_occupation_list .title {
+  background-color: var(--accent-color);
+  width: 90%;
+  margin-inline: auto;
+  text-align: center;
+  color: white;
+  transform: skew(-10deg);
 }
 
 @media only screen and (min-width: 700px) {
