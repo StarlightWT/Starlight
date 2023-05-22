@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   background-color: #303030;
@@ -77,6 +78,10 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 60%;
+}
+
+main {
+  margin-bottom: 15px;
 }
 
 .welcome_title {
@@ -373,4 +378,68 @@ header {
   100% {
     bottom: -60px;
   }
+}
+
+.job {
+  color: white;
+  background-color: #161616;
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 1rem;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 0.5rem;
+}
+
+.job__header {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.job h1,
+.job p {
+  margin: 0;
+}
+
+.job h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: var(--accent-color);
+}
+
+.job__title h2 {
+  color: white;
+}
+
+@media only screen and (min-width: 700px) {
+  .job__title {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: -40px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: black;
+  color: var(--accent-color);
+  margin-bottom: 5px;
+}
+
+footer h1 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.short {
+  position: unset;
+}
+
+.short__footer {
+  bottom: 0px;
+  padding: 0;
 }
