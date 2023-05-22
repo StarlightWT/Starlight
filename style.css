@@ -420,6 +420,30 @@ main {
   }
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+
+.collumn {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+}
+
+.collumn img {
+  height: 30vh;
+}
+
 footer {
   position: absolute;
   bottom: -40px;
