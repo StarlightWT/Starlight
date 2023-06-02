@@ -9,6 +9,21 @@
     <script src="main.js"></script>
   </head>
   <body>
+    <div
+      class="nav_menu_backdrop"
+      id="nav_menu_backdrop"
+      onclick="hideNav()"
+      style="display: none">
+      <div class="nav_menu">
+        <a class="logo" href="index.html"><h1>Starlight</h1></a>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="career.html">Career</a></li>
+        </ul>
+      </div>
+    </div>
     <nav>
       <a class="logo" href="index.html"><h1>Starlight</h1></a>
       <ul class="links">
@@ -17,16 +32,11 @@
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="career.html">Career</a></li>
       </ul>
+      <a class="button_menu" onclick="showNav()">
+        <img src="hm_menu.svg" />
+      </a>
     </nav>
     <main>
-      <div class="projects_navigation">
-        <a href="#2023" onclick="selectYear(2023)"
-          ><h2 class="year">2023</h2></a
-        >
-        <a href="#2022" onclick="selectYear(2022)"
-          ><h2 class="year">2022</h2></a
-        >
-      </div>
       <div id="2023" class="year">
         <h1>2023</h1>
         <div class="project_tile" id="UltimateVirtualMaster">
