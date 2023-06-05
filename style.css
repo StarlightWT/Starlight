@@ -121,7 +121,6 @@ nav ul a:hover {
 
 .button_menu:hover {
   cursor: pointer;
-
   filter: brightness(0) saturate(100%) invert(20%) sepia(39%) saturate(7359%)
     hue-rotate(260deg) brightness(81%) contrast(113%);
   transition-duration: 250ms;
