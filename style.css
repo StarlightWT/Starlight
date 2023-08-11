@@ -3,10 +3,12 @@ html {
   scroll-behavior: smooth;
   --accent-color: #661ad8;
   --accent-color2: rgb(76, 31, 128);
+  --footer-height: 1rem;
 }
 
 body {
   position: relative;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #303030;
@@ -154,7 +156,7 @@ header {
 }
 
 main {
-  margin-bottom: 15px;
+  padding-bottom: calc(var(--footer-height) + 15px);
 }
 
 .welcome_title {
@@ -559,12 +561,11 @@ main {
 
 footer {
   position: absolute;
-  bottom: -40px;
-  padding-bottom: 10px;
+  bottom: 0;
+  height: var(--footer-height);
   width: 100%;
   background-color: black;
   color: var(--accent-color);
-  margin-bottom: 5px;
 }
 
 footer h1 {
